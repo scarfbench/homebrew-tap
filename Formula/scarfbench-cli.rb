@@ -1,25 +1,25 @@
 class ScarfbenchCli < Formula
   desc "CLI for running, testing, and evaluating SCARF benchmark applications."
-  homepage "https://github.com/scarfbench/scarf"
-  version "0.1.1"
+  homepage "https://ibm.github.io/scarfbench"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/scarfbench/scarf/releases/download/v0.1.1/scarfbench-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "29bfb8f686910c49e6088c55b3b3ec9cbf1c819fe706230573a52910fd221580"
+      url "https://github.com/scarfbench/scarfbench-cli/releases/download/v0.1.2/scarfbench-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "30abd5b3f6d910d2dff0ce69c3f03ee0c868beaa11edd20b795a1a6b63baa2d8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/scarfbench/scarf/releases/download/v0.1.1/scarfbench-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "488e99f3b5b6192e20f51741a09048e584a1ae3946934b06a0e21e8166665747"
+      url "https://github.com/scarfbench/scarfbench-cli/releases/download/v0.1.2/scarfbench-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "df9a8e1ff3b18abfe7e70abc0ec35de841358b254f73e2247efc52a306275f8f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/scarfbench/scarf/releases/download/v0.1.1/scarfbench-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "84f86cc0ce418244080a3786cd87e8c33b7c35b7a3dd921363917a863c4a18ff"
+      url "https://github.com/scarfbench/scarfbench-cli/releases/download/v0.1.2/scarfbench-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c2ba52a2b2ed180f260bfe4810bbca3014817edaafb0c8234b316499af4b4719"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/scarfbench/scarf/releases/download/v0.1.1/scarfbench-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "865a05db7ba6d8b52ca896d5fecdfd3eafebfd622d506f58a29d17107b5f584b"
+      url "https://github.com/scarfbench/scarfbench-cli/releases/download/v0.1.2/scarfbench-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "608f0867e1b28f5047a801952c6de8305caf80bc4d105d30497d0638d77d1cd7"
     end
   end
   license "Apache-2.0"
@@ -28,7 +28,6 @@ class ScarfbenchCli < Formula
     "aarch64-apple-darwin":              {},
     "aarch64-unknown-linux-gnu":         {},
     "x86_64-apple-darwin":               {},
-    "x86_64-pc-windows-gnu":             {},
     "x86_64-unknown-linux-gnu":          {},
     "x86_64-unknown-linux-musl-dynamic": {},
     "x86_64-unknown-linux-musl-static":  {},
